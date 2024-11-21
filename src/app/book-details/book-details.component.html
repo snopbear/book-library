@@ -1,0 +1,26 @@
+<div *ngIf="book()">
+    <h2>{{ isEditMode() ? 'Edit Book' : 'Book Details' }}</h2>
+
+    <div *ngIf="isEditMode(); else viewMode">
+        <label>Title:</label>
+        <input [(ngModel)]="book()!.title" />
+
+        <label>Author:</label>
+        <input [(ngModel)]="book()!.author" />
+
+        <label>Info:</label>
+        <textarea [(ngModel)]="book()!.bookInfo"></textarea>
+
+        <!-- Save and Cancel Buttons in Edit Mode -->
+        <button (click)="saveChanges()">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+    </div>
+
+    <!-- View Mode Template -->
+    <ng-template #viewMode>
+        <p><strong>Title:</strong> {{ book()!.title }}</p>
+        <p><strong>Author:</strong> {{ book()!.author }}</p>
+        <p><strong>Info:</strong> {{ book()!.bookInfo }}</p>
+        <button (click)="toggleEditMode()">Edit</button> <!-- Button to enter edit mode -->
+    </ng-template>
+</div>

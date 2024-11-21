@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Angular for Beginners",
+      "author": "John Doe",
+      "bookInfo": "Introductory guide to Angular."
+    },
+    {
+      "id": 2,
+      "title": "Advanced Angular",
+      "author": "Jane Smith",
+      "bookInfo": "In-depth guide to advanced Angular topics."
+    },
+    {
+      "id": 3,
+      "title": "New Book",
+      "author": "New Author",
+      "bookInfo": "Description of the new book."
+    },
+    {
+      "id": 4,
+      "title": "New Book",
+      "author": "New Author",
+      "bookInfo": "Description of the new book."
+    },
+    {
+      "id": 5,
+      "title": "New Book00001444",
+      "author": "New Author",
+      "bookInfo": "Description of the new book."
+    }
+  ]
+}
